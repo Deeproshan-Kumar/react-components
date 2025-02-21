@@ -1,0 +1,51 @@
+.wrapper {
+  max-width: 620px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+h1 {
+  color: #0099ff;
+  margin-bottom: 10px;
+}
+
+.search {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #343434;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.search:focus {
+  outline-color: #0099ff;
+}
+
+.no-suggestions {
+  text-align: center;
+}
+
+.suggestions {
+  max-height: 80vh;
+  overflow: auto;
+  list-style-type: none;
+}
+
+.suggestions li {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 300ms all ease-in-out;
+}
+
+.suggestions li:hover {
+  background: #f5f5f5;
+  transition: 0s;
+}
+
+.suggestions li:not(:last-child) {
+  border-bottom: 1px solid #c7c5c5;
+}
